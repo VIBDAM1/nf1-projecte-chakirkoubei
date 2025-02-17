@@ -35,6 +35,14 @@
             nutricionToolStripMenuItem = new ToolStripMenuItem();
             ayudaToolStripMenuItem = new ToolStripMenuItem();
             contactoToolStripMenuItem = new ToolStripMenuItem();
+            comboBox1 = new ComboBox();
+            label1 = new Label();
+            label2 = new Label();
+            comboBox2 = new ComboBox();
+            label3 = new Label();
+            comboBox3 = new ComboBox();
+            listBox1 = new ListBox();
+            label4 = new Label();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -77,20 +85,101 @@
             // ayudaToolStripMenuItem
             // 
             ayudaToolStripMenuItem.Name = "ayudaToolStripMenuItem";
-            ayudaToolStripMenuItem.Size = new Size(60, 20);
-            ayudaToolStripMenuItem.Text = "Soporte";
+            ayudaToolStripMenuItem.Size = new Size(68, 20);
+            ayudaToolStripMenuItem.Text = "Contacto";
             // 
             // contactoToolStripMenuItem
             // 
             contactoToolStripMenuItem.Name = "contactoToolStripMenuItem";
-            contactoToolStripMenuItem.Size = new Size(68, 20);
-            contactoToolStripMenuItem.Text = "Contacto";
+            contactoToolStripMenuItem.Size = new Size(12, 20);
+            // 
+            // comboBox1
+            // 
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Items.AddRange(new object[] { "Tipo de entreno" });
+            comboBox1.Location = new Point(94, 92);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(121, 23);
+            comboBox1.TabIndex = 2;
+            comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(64, 63);
+            label1.Name = "label1";
+            label1.Size = new Size(184, 15);
+            label1.TabIndex = 3;
+            label1.Text = "Selecciona tipo de entrenamiento";
+            label1.Click += label1_Click;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(311, 63);
+            label2.Name = "label2";
+            label2.Size = new Size(163, 15);
+            label2.TabIndex = 5;
+            label2.Text = "Cuantos dias quieres entrenar";
+            // 
+            // comboBox2
+            // 
+            comboBox2.FormattingEnabled = true;
+            comboBox2.Items.AddRange(new object[] { "Tipo de entreno" });
+            comboBox2.Location = new Point(329, 92);
+            comboBox2.Name = "comboBox2";
+            comboBox2.Size = new Size(121, 23);
+            comboBox2.TabIndex = 4;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(599, 63);
+            label3.Name = "label3";
+            label3.Size = new Size(52, 15);
+            label3.TabIndex = 7;
+            label3.Text = "Objetivo";
+            // 
+            // comboBox3
+            // 
+            comboBox3.FormattingEnabled = true;
+            comboBox3.Items.AddRange(new object[] { "Tipo de entreno" });
+            comboBox3.Location = new Point(567, 92);
+            comboBox3.Name = "comboBox3";
+            comboBox3.Size = new Size(121, 23);
+            comboBox3.TabIndex = 6;
+            // 
+            // listBox1
+            // 
+            listBox1.FormattingEnabled = true;
+            listBox1.ItemHeight = 15;
+            listBox1.Location = new Point(329, 191);
+            listBox1.Name = "listBox1";
+            listBox1.Size = new Size(120, 94);
+            listBox1.TabIndex = 8;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(333, 173);
+            label4.Name = "label4";
+            label4.Size = new Size(117, 15);
+            label4.TabIndex = 9;
+            label4.Text = "Rutina recomendada";
             // 
             // Planifiacion_Entrenamientos
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(label4);
+            Controls.Add(listBox1);
+            Controls.Add(label3);
+            Controls.Add(comboBox3);
+            Controls.Add(label2);
+            Controls.Add(comboBox2);
+            Controls.Add(label1);
+            Controls.Add(comboBox1);
             Controls.Add(menuStrip1);
             Name = "Planifiacion_Entrenamientos";
             Text = "Planifiacion_Entrenamientos";
@@ -109,5 +198,13 @@
         private ToolStripMenuItem nutricionToolStripMenuItem;
         private ToolStripMenuItem ayudaToolStripMenuItem;
         private ToolStripMenuItem contactoToolStripMenuItem;
+        private ComboBox comboBox1;
+        private Label label1;
+        private Label label2;
+        private ComboBox comboBox2;
+        private Label label3;
+        private ComboBox comboBox3;
+        private ListBox listBox1;
+        private Label label4;
     }
 }

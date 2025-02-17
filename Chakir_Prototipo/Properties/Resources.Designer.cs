@@ -63,6 +63,26 @@ namespace Chakir_Prototipo.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap correo_de_propaganda {
+            get {
+                object obj = ResourceManager.GetObject("correo-de-propaganda", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap homa {
+            get {
+                object obj = ResourceManager.GetObject("homa", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap logo_for_a_training_and_nutrition_program {
             get {
                 object obj = ResourceManager.GetObject("logo for a training and nutrition program", resourceCulture);
@@ -77,6 +97,16 @@ namespace Chakir_Prototipo.Properties {
             get {
                 object obj = ResourceManager.GetObject("un logo pequeño con texto motivador para un programa de entrenamiento y nutrición" +
                         "", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap viber {
+            get {
+                object obj = ResourceManager.GetObject("viber", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

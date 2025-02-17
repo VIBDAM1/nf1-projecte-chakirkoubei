@@ -10,19 +10,14 @@ using System.Windows.Forms;
 
 namespace Chakir_Prototipo
 {
-    public partial class Inicio_sesion : Form
+    public partial class Contacto : Form
     {
-        public Inicio_sesion()
+        public Contacto()
         {
             InitializeComponent();
         }
 
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        private void Contacto_Load(object sender, EventArgs e)
         {
 
         }

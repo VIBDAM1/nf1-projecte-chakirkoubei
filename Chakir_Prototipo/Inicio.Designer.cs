@@ -79,14 +79,13 @@
             // ayudaToolStripMenuItem
             // 
             ayudaToolStripMenuItem.Name = "ayudaToolStripMenuItem";
-            ayudaToolStripMenuItem.Size = new Size(60, 20);
-            ayudaToolStripMenuItem.Text = "Soporte";
+            ayudaToolStripMenuItem.Size = new Size(68, 20);
+            ayudaToolStripMenuItem.Text = "Contacto";
             // 
             // contactoToolStripMenuItem
             // 
             contactoToolStripMenuItem.Name = "contactoToolStripMenuItem";
-            contactoToolStripMenuItem.Size = new Size(68, 20);
-            contactoToolStripMenuItem.Text = "Contacto";
+            contactoToolStripMenuItem.Size = new Size(12, 20);
             // 
             // pictureBox1
             // 
@@ -120,6 +119,7 @@
             MainMenuStrip = menuStrip1;
             Name = "Inicio";
             Text = "Form1";
+            Load += Inicio_Load;
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
