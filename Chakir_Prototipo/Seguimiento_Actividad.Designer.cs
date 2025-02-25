@@ -38,6 +38,7 @@
             progressBar1 = new ProgressBar();
             label1 = new Label();
             label2 = new Label();
+            button1 = new Button();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -56,6 +57,7 @@
             homeToolStripMenuItem.Name = "homeToolStripMenuItem";
             homeToolStripMenuItem.Size = new Size(52, 20);
             homeToolStripMenuItem.Text = "Home";
+            homeToolStripMenuItem.Click += homeToolStripMenuItem_Click;
             // 
             // planificacionEntrenamientosToolStripMenuItem
             // 
@@ -63,6 +65,7 @@
             planificacionEntrenamientosToolStripMenuItem.Name = "planificacionEntrenamientosToolStripMenuItem";
             planificacionEntrenamientosToolStripMenuItem.Size = new Size(173, 20);
             planificacionEntrenamientosToolStripMenuItem.Text = "Planificacion Entrenamientos";
+            planificacionEntrenamientosToolStripMenuItem.Click += planificacionEntrenamientosToolStripMenuItem_Click;
             // 
             // seguimientoActividadToolStripMenuItem
             // 
@@ -70,18 +73,21 @@
             seguimientoActividadToolStripMenuItem.Name = "seguimientoActividadToolStripMenuItem";
             seguimientoActividadToolStripMenuItem.Size = new Size(139, 20);
             seguimientoActividadToolStripMenuItem.Text = "Seguimiento Actividad";
+            seguimientoActividadToolStripMenuItem.Click += seguimientoActividadToolStripMenuItem_Click;
             // 
             // nutricionToolStripMenuItem
             // 
             nutricionToolStripMenuItem.Name = "nutricionToolStripMenuItem";
             nutricionToolStripMenuItem.Size = new Size(69, 20);
             nutricionToolStripMenuItem.Text = "Nutricion";
+            nutricionToolStripMenuItem.Click += nutricionToolStripMenuItem_Click;
             // 
             // ayudaToolStripMenuItem
             // 
             ayudaToolStripMenuItem.Name = "ayudaToolStripMenuItem";
             ayudaToolStripMenuItem.Size = new Size(68, 20);
             ayudaToolStripMenuItem.Text = "Contacto";
+            ayudaToolStripMenuItem.Click += ayudaToolStripMenuItem_Click;
             // 
             // contactoToolStripMenuItem
             // 
@@ -98,11 +104,11 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(286, 130);
+            label1.Location = new Point(259, 129);
             label1.Name = "label1";
-            label1.Size = new Size(229, 15);
+            label1.Size = new Size(275, 15);
             label1.TabIndex = 4;
-            label1.Text = "¡Llevas esto de tu entrenamiento sigue asi!";
+            label1.Text = "Cada vez que completes un entrenamiento avanza!";
             // 
             // label2
             // 
@@ -113,11 +119,22 @@
             label2.TabIndex = 5;
             label2.Text = "X%";
             // 
+            // button1
+            // 
+            button1.Location = new Point(359, 315);
+            button1.Name = "button1";
+            button1.Size = new Size(75, 23);
+            button1.TabIndex = 11;
+            button1.Text = "Avanzar";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
             // Seguimiento_Actividad
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(button1);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(progressBar1);
@@ -142,5 +159,6 @@
         private ProgressBar progressBar1;
         private Label label1;
         private Label label2;
+        public Button button1;
     }
 }

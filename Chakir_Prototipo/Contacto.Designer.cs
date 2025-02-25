@@ -76,6 +76,7 @@
             homeToolStripMenuItem.Name = "homeToolStripMenuItem";
             homeToolStripMenuItem.Size = new Size(52, 20);
             homeToolStripMenuItem.Text = "Home";
+            homeToolStripMenuItem.Click += homeToolStripMenuItem_Click;
             // 
             // planificacionEntrenamientosToolStripMenuItem
             // 
@@ -84,18 +85,21 @@
             planificacionEntrenamientosToolStripMenuItem.Size = new Size(173, 20);
             planificacionEntrenamientosToolStripMenuItem.Text = "Planificacion Entrenamientos";
             planificacionEntrenamientosToolStripMenuItem.TextImageRelation = TextImageRelation.TextAboveImage;
+            planificacionEntrenamientosToolStripMenuItem.Click += planificacionEntrenamientosToolStripMenuItem_Click;
             // 
             // seguimientoActividadToolStripMenuItem
             // 
             seguimientoActividadToolStripMenuItem.Name = "seguimientoActividadToolStripMenuItem";
             seguimientoActividadToolStripMenuItem.Size = new Size(139, 20);
             seguimientoActividadToolStripMenuItem.Text = "Seguimiento Actividad";
+            seguimientoActividadToolStripMenuItem.Click += seguimientoActividadToolStripMenuItem_Click;
             // 
             // nutricionToolStripMenuItem
             // 
             nutricionToolStripMenuItem.Name = "nutricionToolStripMenuItem";
             nutricionToolStripMenuItem.Size = new Size(69, 20);
             nutricionToolStripMenuItem.Text = "Nutricion";
+            nutricionToolStripMenuItem.Click += nutricionToolStripMenuItem_Click;
             // 
             // ayudaToolStripMenuItem
             // 
@@ -103,6 +107,7 @@
             ayudaToolStripMenuItem.Name = "ayudaToolStripMenuItem";
             ayudaToolStripMenuItem.Size = new Size(68, 20);
             ayudaToolStripMenuItem.Text = "Contacto";
+            ayudaToolStripMenuItem.Click += ayudaToolStripMenuItem_Click;
             // 
             // contactoToolStripMenuItem
             // 
@@ -272,6 +277,7 @@
             button1.TabIndex = 20;
             button1.Text = "Enviar";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // Contacto
             // 
@@ -338,4 +344,5 @@
         private Label label9;
         private Button button1;
     }
+
 }

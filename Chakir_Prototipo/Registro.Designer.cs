@@ -129,7 +129,7 @@
             button1.Name = "button1";
             button1.Size = new Size(75, 23);
             button1.TabIndex = 9;
-            button1.Text = "Registrarse";
+            button1.Text = "Acceder";
             button1.UseVisualStyleBackColor = false;
             button1.Click += btnRegistrarse_Click;
             // 
@@ -137,11 +137,11 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label5.Location = new Point(353, 173);
+            label5.Location = new Point(352, 173);
             label5.Name = "label5";
-            label5.Size = new Size(135, 30);
+            label5.Size = new Size(141, 30);
             label5.TabIndex = 10;
-            label5.Text = "REGISTRATE";
+            label5.Text = "BIENVENIDO";
             // 
             // Registro
             // 

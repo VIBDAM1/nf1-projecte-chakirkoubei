@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             label4 = new Label();
-            listBox1 = new ListBox();
             label3 = new Label();
             comboBox3 = new ComboBox();
             label2 = new Label();
@@ -53,26 +52,19 @@
             label8 = new Label();
             comboBox4 = new ComboBox();
             label9 = new Label();
+            textBox5 = new TextBox();
+            button1 = new Button();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(360, 241);
+            label4.Location = new Point(360, 214);
             label4.Name = "label4";
             label4.Size = new Size(110, 15);
             label4.TabIndex = 18;
             label4.Text = "Dieta recomendada";
-            // 
-            // listBox1
-            // 
-            listBox1.FormattingEnabled = true;
-            listBox1.ItemHeight = 15;
-            listBox1.Location = new Point(349, 268);
-            listBox1.Name = "listBox1";
-            listBox1.Size = new Size(134, 94);
-            listBox1.TabIndex = 17;
             // 
             // label3
             // 
@@ -144,6 +136,7 @@
             homeToolStripMenuItem.Name = "homeToolStripMenuItem";
             homeToolStripMenuItem.Size = new Size(52, 20);
             homeToolStripMenuItem.Text = "Home";
+            homeToolStripMenuItem.Click += homeToolStripMenuItem_Click;
             // 
             // planificacionEntrenamientosToolStripMenuItem
             // 
@@ -151,12 +144,14 @@
             planificacionEntrenamientosToolStripMenuItem.Name = "planificacionEntrenamientosToolStripMenuItem";
             planificacionEntrenamientosToolStripMenuItem.Size = new Size(173, 20);
             planificacionEntrenamientosToolStripMenuItem.Text = "Planificacion Entrenamientos";
+            planificacionEntrenamientosToolStripMenuItem.Click += planificacionEntrenamientosToolStripMenuItem_Click;
             // 
             // seguimientoActividadToolStripMenuItem
             // 
             seguimientoActividadToolStripMenuItem.Name = "seguimientoActividadToolStripMenuItem";
             seguimientoActividadToolStripMenuItem.Size = new Size(139, 20);
             seguimientoActividadToolStripMenuItem.Text = "Seguimiento Actividad";
+            seguimientoActividadToolStripMenuItem.Click += seguimientoActividadToolStripMenuItem_Click;
             // 
             // nutricionToolStripMenuItem
             // 
@@ -164,6 +159,7 @@
             nutricionToolStripMenuItem.Name = "nutricionToolStripMenuItem";
             nutricionToolStripMenuItem.Size = new Size(69, 20);
             nutricionToolStripMenuItem.Text = "Nutricion";
+            nutricionToolStripMenuItem.Click += nutricionToolStripMenuItem_Click;
             // 
             // ayudaToolStripMenuItem
             // 
@@ -259,11 +255,32 @@
             label9.TabIndex = 28;
             label9.Text = "Tipo de dieta";
             // 
+            // textBox5
+            // 
+            textBox5.Location = new Point(138, 232);
+            textBox5.Multiline = true;
+            textBox5.Name = "textBox5";
+            textBox5.ScrollBars = ScrollBars.Vertical;
+            textBox5.Size = new Size(565, 178);
+            textBox5.TabIndex = 29;
+            // 
+            // button1
+            // 
+            button1.BackColor = SystemColors.ActiveCaption;
+            button1.Location = new Point(379, 416);
+            button1.Name = "button1";
+            button1.Size = new Size(75, 23);
+            button1.TabIndex = 30;
+            button1.Text = "Generar";
+            button1.UseVisualStyleBackColor = false;
+            // 
             // Nutricion
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 449);
+            Controls.Add(button1);
+            Controls.Add(textBox5);
             Controls.Add(label9);
             Controls.Add(comboBox4);
             Controls.Add(label8);
@@ -275,7 +292,6 @@
             Controls.Add(textBox2);
             Controls.Add(textBox1);
             Controls.Add(label4);
-            Controls.Add(listBox1);
             Controls.Add(label3);
             Controls.Add(comboBox3);
             Controls.Add(label2);
@@ -318,5 +334,7 @@
         private Label label8;
         private ComboBox comboBox4;
         private Label label9;
+        private TextBox textBox5;
+        private Button button1;
     }
 }

@@ -62,6 +62,7 @@
             homeToolStripMenuItem.Name = "homeToolStripMenuItem";
             homeToolStripMenuItem.Size = new Size(52, 20);
             homeToolStripMenuItem.Text = "Home";
+            homeToolStripMenuItem.Click += homeToolStripMenuItem_Click;
             // 
             // planificacionEntrenamientosToolStripMenuItem
             // 
@@ -75,18 +76,21 @@
             seguimientoActividadToolStripMenuItem.Name = "seguimientoActividadToolStripMenuItem";
             seguimientoActividadToolStripMenuItem.Size = new Size(139, 20);
             seguimientoActividadToolStripMenuItem.Text = "Seguimiento Actividad";
+            seguimientoActividadToolStripMenuItem.Click += seguimientoActividadToolStripMenuItem_Click;
             // 
             // nutricionToolStripMenuItem
             // 
             nutricionToolStripMenuItem.Name = "nutricionToolStripMenuItem";
             nutricionToolStripMenuItem.Size = new Size(69, 20);
             nutricionToolStripMenuItem.Text = "Nutricion";
+            nutricionToolStripMenuItem.Click += nutricionToolStripMenuItem_Click;
             // 
             // ayudaToolStripMenuItem
             // 
             ayudaToolStripMenuItem.Name = "ayudaToolStripMenuItem";
             ayudaToolStripMenuItem.Size = new Size(68, 20);
             ayudaToolStripMenuItem.Text = "Contacto";
+            ayudaToolStripMenuItem.Click += ayudaToolStripMenuItem_Click;
             // 
             // contactoToolStripMenuItem
             // 
@@ -174,6 +178,7 @@
             textBox1.ScrollBars = ScrollBars.Vertical;
             textBox1.Size = new Size(431, 121);
             textBox1.TabIndex = 11;
+            textBox1.TextChanged += textBox1_TextChanged;
             // 
             // Planifiacion_Entrenamientos
             // 

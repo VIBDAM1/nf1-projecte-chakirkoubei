@@ -45,7 +45,10 @@ namespace Chakir_Prototipo
         // Evento para el menú "Ayuda"
         private void ayudaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-           
+            // Abrir el formulario de ayuda
+            Contacto ayudaForm = new Contacto();
+            ayudaForm.Show();  // Muestra el formulario de ayuda
+            this.Hide();       // Oculta el formulario actual (opcional)
         }
     }
 }

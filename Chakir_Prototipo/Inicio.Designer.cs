@@ -53,7 +53,7 @@
             // 
             // homeToolStripMenuItem
             // 
-            homeToolStripMenuItem.ForeColor = SystemColors.Desktop;
+            homeToolStripMenuItem.ForeColor = SystemColors.Highlight;
             homeToolStripMenuItem.Name = "homeToolStripMenuItem";
             homeToolStripMenuItem.Size = new Size(52, 20);
             homeToolStripMenuItem.Text = "Home";

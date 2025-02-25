@@ -37,17 +37,11 @@ namespace Chakir_Prototipo
             string diasEntrenamiento = comboBox2.SelectedItem.ToString();
             string objetivo = comboBox3.SelectedItem.ToString();
 
-            // Mensaje de depuración
-            MessageBox.Show($"Selecciones: {tipoEntrenamiento}, {diasEntrenamiento}, {objetivo}", "Depuración", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
             // Generar la rutina recomendada basada en las selecciones
             string rutina = GenerarRutinaRecomendada(tipoEntrenamiento, diasEntrenamiento, objetivo);
 
             // Mostrar la rutina en el TextBox
             textBox1.Text = rutina;
-
-            // Mensaje de depuración
-            MessageBox.Show("Rutina generada correctamente.", "Depuración", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private string GenerarRutinaRecomendada(string tipoEntrenamiento, string diasEntrenamiento, string objetivo)
@@ -127,6 +121,47 @@ namespace Chakir_Prototipo
             }
 
             return rutina.ToString();
+        }
+
+        // Evento para el menú "Home"
+        private void homeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // Abrir el formulario de inicio
+            Inicio inicioForm = new Inicio();
+            inicioForm.Show();  // Muestra el formulario de inicio
+            this.Hide();         // Oculta el formulario actual (opcional)
+        }
+
+        // Evento para el menú "Seguimiento Actividad"
+        private void seguimientoActividadToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // Abrir el formulario de seguimiento de actividad
+            Seguimiento_Actividad seguimientoForm = new Seguimiento_Actividad();
+            seguimientoForm.Show();  // Muestra el formulario de seguimiento
+            this.Hide();             // Oculta el formulario actual (opcional)
+        }
+
+        // Evento para el menú "Nutrición"
+        private void nutricionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // Abrir el formulario de nutrición
+            Nutricion nutricionForm = new Nutricion();
+            nutricionForm.Show();  // Muestra el formulario de nutrición
+            this.Hide();          // Oculta el formulario actual (opcional)
+        }
+
+        // Evento para el menú "Ayuda"
+        private void ayudaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // Abrir el formulario de ayuda
+            Contacto ayudaForm = new Contacto();
+            ayudaForm.Show();  // Muestra el formulario de ayuda
+            this.Hide();       // Oculta el formulario actual (opcional)
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
