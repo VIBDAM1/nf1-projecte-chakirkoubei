@@ -129,6 +129,7 @@
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(140, 23);
             textBox1.TabIndex = 10;
+            textBox1.TextChanged += textBox1_TextChanged;
             // 
             // label5
             // 
@@ -180,6 +181,7 @@
             Controls.Add(textBox1);
             Name = "Inicio_sesion";
             Text = "Inicio_sesion";
+            Load += Inicio_sesion_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();

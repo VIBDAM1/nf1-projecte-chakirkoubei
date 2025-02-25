@@ -39,6 +39,7 @@
             textBox4 = new TextBox();
             pictureBox1 = new PictureBox();
             button1 = new Button();
+            label5 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -114,7 +115,7 @@
             // 
             pictureBox1.BackColor = Color.Transparent;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(318, 28);
+            pictureBox1.Location = new Point(318, 3);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(186, 167);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -130,12 +131,24 @@
             button1.TabIndex = 9;
             button1.Text = "Registrarse";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += btnRegistrarse_Click;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label5.Location = new Point(353, 173);
+            label5.Name = "label5";
+            label5.Size = new Size(135, 30);
+            label5.TabIndex = 10;
+            label5.Text = "REGISTRATE";
             // 
             // Registro
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(label5);
             Controls.Add(button1);
             Controls.Add(pictureBox1);
             Controls.Add(label4);
@@ -147,7 +160,6 @@
             Controls.Add(textBox2);
             Controls.Add(textBox1);
             Name = "Registro";
-            Text = "Registro";
             Load += Registro_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
@@ -166,5 +178,6 @@
         private TextBox textBox4;
         private PictureBox pictureBox1;
         private Button button1;
+        private Label label5;
     }
 }

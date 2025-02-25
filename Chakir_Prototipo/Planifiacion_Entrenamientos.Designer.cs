@@ -41,8 +41,9 @@
             comboBox2 = new ComboBox();
             label3 = new Label();
             comboBox3 = new ComboBox();
-            listBox1 = new ListBox();
             label4 = new Label();
+            button1 = new Button();
+            textBox1 = new TextBox();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -68,7 +69,6 @@
             planificacionEntrenamientosToolStripMenuItem.Name = "planificacionEntrenamientosToolStripMenuItem";
             planificacionEntrenamientosToolStripMenuItem.Size = new Size(173, 20);
             planificacionEntrenamientosToolStripMenuItem.Text = "Planificacion Entrenamientos";
-            planificacionEntrenamientosToolStripMenuItem.Click += planificacionEntrenamientosToolStripMenuItem_Click;
             // 
             // seguimientoActividadToolStripMenuItem
             // 
@@ -101,7 +101,6 @@
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(121, 23);
             comboBox1.TabIndex = 2;
-            comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
             // 
             // label1
             // 
@@ -111,7 +110,6 @@
             label1.Size = new Size(184, 15);
             label1.TabIndex = 3;
             label1.Text = "Selecciona tipo de entrenamiento";
-            label1.Click += label1_Click;
             // 
             // label2
             // 
@@ -149,15 +147,6 @@
             comboBox3.Size = new Size(121, 23);
             comboBox3.TabIndex = 6;
             // 
-            // listBox1
-            // 
-            listBox1.FormattingEnabled = true;
-            listBox1.ItemHeight = 15;
-            listBox1.Location = new Point(329, 191);
-            listBox1.Name = "listBox1";
-            listBox1.Size = new Size(120, 94);
-            listBox1.TabIndex = 8;
-            // 
             // label4
             // 
             label4.AutoSize = true;
@@ -167,13 +156,33 @@
             label4.TabIndex = 9;
             label4.Text = "Rutina recomendada";
             // 
+            // button1
+            // 
+            button1.Location = new Point(352, 347);
+            button1.Name = "button1";
+            button1.Size = new Size(75, 23);
+            button1.TabIndex = 10;
+            button1.Text = "Generar";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(183, 191);
+            textBox1.Multiline = true;
+            textBox1.Name = "textBox1";
+            textBox1.ScrollBars = ScrollBars.Vertical;
+            textBox1.Size = new Size(431, 121);
+            textBox1.TabIndex = 11;
+            // 
             // Planifiacion_Entrenamientos
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(textBox1);
+            Controls.Add(button1);
             Controls.Add(label4);
-            Controls.Add(listBox1);
             Controls.Add(label3);
             Controls.Add(comboBox3);
             Controls.Add(label2);
@@ -183,6 +192,7 @@
             Controls.Add(menuStrip1);
             Name = "Planifiacion_Entrenamientos";
             Text = "Planifiacion_Entrenamientos";
+            Load += Planifiacion_Entrenamientos_Load;
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
             ResumeLayout(false);
@@ -204,7 +214,8 @@
         private ComboBox comboBox2;
         private Label label3;
         private ComboBox comboBox3;
-        private ListBox listBox1;
         private Label label4;
+        private Button button1;
+        private TextBox textBox1;
     }
 }

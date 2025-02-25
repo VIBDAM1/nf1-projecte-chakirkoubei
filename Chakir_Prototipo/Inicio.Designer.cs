@@ -63,24 +63,28 @@
             planificacionEntrenamientosToolStripMenuItem.Name = "planificacionEntrenamientosToolStripMenuItem";
             planificacionEntrenamientosToolStripMenuItem.Size = new Size(173, 20);
             planificacionEntrenamientosToolStripMenuItem.Text = "Planificacion Entrenamientos";
+            planificacionEntrenamientosToolStripMenuItem.Click += planificacionEntrenamientosToolStripMenuItem_Click;
             // 
             // seguimientoActividadToolStripMenuItem
             // 
             seguimientoActividadToolStripMenuItem.Name = "seguimientoActividadToolStripMenuItem";
             seguimientoActividadToolStripMenuItem.Size = new Size(139, 20);
             seguimientoActividadToolStripMenuItem.Text = "Seguimiento Actividad";
+            seguimientoActividadToolStripMenuItem.Click += seguimientoActividadToolStripMenuItem_Click;
             // 
             // nutricionToolStripMenuItem
             // 
             nutricionToolStripMenuItem.Name = "nutricionToolStripMenuItem";
             nutricionToolStripMenuItem.Size = new Size(69, 20);
             nutricionToolStripMenuItem.Text = "Nutricion";
+            nutricionToolStripMenuItem.Click += nutricionToolStripMenuItem_Click;
             // 
             // ayudaToolStripMenuItem
             // 
             ayudaToolStripMenuItem.Name = "ayudaToolStripMenuItem";
             ayudaToolStripMenuItem.Size = new Size(68, 20);
             ayudaToolStripMenuItem.Text = "Contacto";
+            ayudaToolStripMenuItem.Click += ayudaToolStripMenuItem_Click;
             // 
             // contactoToolStripMenuItem
             // 

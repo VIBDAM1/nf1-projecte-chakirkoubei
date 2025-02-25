@@ -26,5 +26,15 @@ namespace Chakir_Prototipo
         {
 
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Inicio_sesion_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
