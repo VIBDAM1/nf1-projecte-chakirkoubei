@@ -160,6 +160,7 @@
             Controls.Add(textBox2);
             Controls.Add(textBox1);
             Name = "Registro";
+            StartPosition = FormStartPosition.CenterScreen;
             Load += Registro_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);

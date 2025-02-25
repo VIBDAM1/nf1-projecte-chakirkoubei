@@ -140,6 +140,7 @@
             Controls.Add(progressBar1);
             Controls.Add(menuStrip1);
             Name = "Seguimiento_Actividad";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Seguimiento_Actividad";
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();

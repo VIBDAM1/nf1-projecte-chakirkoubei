@@ -122,6 +122,7 @@
             Controls.Add(menuStrip1);
             MainMenuStrip = menuStrip1;
             Name = "Inicio";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
             Load += Inicio_Load;
             menuStrip1.ResumeLayout(false);

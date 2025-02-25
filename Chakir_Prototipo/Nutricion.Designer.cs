@@ -300,6 +300,7 @@
             Controls.Add(comboBox1);
             Controls.Add(menuStrip1);
             Name = "Nutricion";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Nutricion";
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();

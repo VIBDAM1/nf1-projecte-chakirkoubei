@@ -196,6 +196,7 @@
             Controls.Add(comboBox1);
             Controls.Add(menuStrip1);
             Name = "Planifiacion_Entrenamientos";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Planifiacion_Entrenamientos";
             Load += Planifiacion_Entrenamientos_Load;
             menuStrip1.ResumeLayout(false);

@@ -304,6 +304,7 @@
             Controls.Add(label1);
             Controls.Add(menuStrip1);
             Name = "Contacto";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Contacto";
             Load += Contacto_Load;
             menuStrip1.ResumeLayout(false);
